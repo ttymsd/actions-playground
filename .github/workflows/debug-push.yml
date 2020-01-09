@@ -1,12 +1,10 @@
-name: Debug schedule
+name: Debug push
 
-on:
-  schedule:
-    - cron: '*/5 * * * *' # 平日毎朝7時に実行 (UTC/協定世界時)
+on: [push]
 
 jobs:
   build:
-    name: Debug schedule
+    name: Debug push
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
