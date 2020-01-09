@@ -2,7 +2,7 @@ name: Debug schedule
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # 平日毎朝7時に実行 (UTC/協定世界時)
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
